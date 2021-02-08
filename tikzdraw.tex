@@ -1,0 +1,18 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{tikz}%
+%
+%
+%
+\begin{document}%
+\normalsize%
+\begin{tikzpicture}%
+\node[draw,align=center,minimum height=3em,minimum width=1em] (block) {My block};%
+\node[draw,circle,align=center,minimum width=3em,right of=block,node distance=3cm] (circle) {};%
+\path[-latex,draw] (block) -- (circle);%
+\end{tikzpicture}%
+\end{document}
